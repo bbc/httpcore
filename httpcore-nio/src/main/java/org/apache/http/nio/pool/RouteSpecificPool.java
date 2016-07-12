@@ -80,7 +80,7 @@ abstract class RouteSpecificPool<T, C, E extends PoolEntry<T, C>> {
     public E getFree(final Object state) {
         if (!this.available.isEmpty()) {
             if (state != null) {
-                final Iterator<E> it = this.available.iterator();
+                final Iterator<E> it = this.available.descendingIterator();
                 while (it.hasNext()) {
                     final E entry = it.next();
                     if (state.equals(entry.getState())) {
@@ -90,7 +90,7 @@ abstract class RouteSpecificPool<T, C, E extends PoolEntry<T, C>> {
                     }
                 }
             }
-            final Iterator<E> it = this.available.iterator();
+            final Iterator<E> it = this.available.descendingIterator();
             while (it.hasNext()) {
                 final E entry = it.next();
                 if (entry.getState() == null) {

@@ -284,9 +284,9 @@ public class TestRouteSpecificPool {
 
         Assert.assertSame(entry1, pool.getLastUsed());
 
-        Assert.assertSame(entry3, pool.getFree(null));
-        Assert.assertSame(entry2, pool.getFree(null));
         Assert.assertSame(entry1, pool.getFree(null));
+        Assert.assertSame(entry2, pool.getFree(null));
+        Assert.assertSame(entry3, pool.getFree(null));
     }
 
     @Test
@@ -324,9 +324,9 @@ public class TestRouteSpecificPool {
         pool.free(entry2, true);
         pool.free(entry3, true);
 
+        Assert.assertSame(entry1, pool.getFree(null));
         Assert.assertSame(entry2, pool.getFree(Boolean.FALSE));
         Assert.assertSame(entry3, pool.getFree(Boolean.FALSE));
-        Assert.assertSame(entry1, pool.getFree(null));
         Assert.assertSame(null, pool.getFree(null));
 
         entry1.setState(Boolean.TRUE);
@@ -339,8 +339,8 @@ public class TestRouteSpecificPool {
         Assert.assertSame(null, pool.getFree(null));
         Assert.assertSame(entry2, pool.getFree(Boolean.FALSE));
         Assert.assertSame(null, pool.getFree(Boolean.FALSE));
-        Assert.assertSame(entry3, pool.getFree(Boolean.TRUE));
         Assert.assertSame(entry1, pool.getFree(Boolean.TRUE));
+        Assert.assertSame(entry3, pool.getFree(Boolean.TRUE));
         Assert.assertSame(null, pool.getFree(Boolean.TRUE));
     }
 
