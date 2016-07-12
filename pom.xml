@@ -58,9 +58,10 @@
   </issueManagement>
 
   <scm>
-    <connection>scm:svn:https://svn.apache.org/repos/asf/httpcomponents/httpcore/branches/4.4.x</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/httpcomponents/httpcore/branches/4.4.x</developerConnection>
-    <url>https://svn.apache.org/repos/asf/httpcomponents/httpcore/branches/4.4.x</url>
+    <connection>scm:git:git@github.com:bbc/httpcore.git</connection>
+    <url>scm:git:git@github.com:bbc/httpcore.git</url>
+    <developerConnection>scm:git:git@github.com:bbc/httpcore.git</developerConnection>
+    <tag>4.4.x</tag>
   </scm>
 
   <modules>
