@@ -40,7 +40,6 @@
     <groupId>bbc.pod.mp</groupId>
     <artifactId>mod_av-parent</artifactId>
     <version>2.4</version>
-    <relativePath />
   </parent>
 
   <properties>
