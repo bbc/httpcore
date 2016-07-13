@@ -27,7 +27,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.co.bbc.fork.org.apache.httpcomponents</groupId>
   <artifactId>httpcore-nio</artifactId>
-  <version>4.4.6-SNAPSHOT</version>
+  <version>4.4.6</version>
   <name>Apache HttpCore NIO</name>
   <inceptionYear>2005</inceptionYear>
   <description>
